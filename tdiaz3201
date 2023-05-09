@@ -1,0 +1,20 @@
+CREATE TABLE immunization (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, brand TEXT, ndc_number TEXT, cost INTEGER);
+
+INSERT INTO immunization VALUES (1, "DT", 10, "Sanofi", 49281-0225-10, 125);
+INSERT INTO immunization VALUES (2, "DTaP", 40, "Sanofi", 49281-0286-10, 450);
+INSERT INTO immunization VALUES (3, "Hepatitis A", 40, "Vaqta", 00006-4831-41, 325);
+INSERT INTO immunization VALUES (4, "Hepatitis B", 60, "Reccombivax", 00006-4093-02, 125);
+INSERT INTO immunization VALUES (5, "HIB", 20, "Hiberix", 58160-0818-110, 250);
+INSERT INTO immunization VALUES (6, "HPV", 60, "Gardasil", 00006-4121-02, 275);
+INSERT INTO immunization VALUES (7, "Meningococcal Conjugate", 40, "Menactra", 49281-0589-05, 145);
+INSERT INTO immunization VALUES (8, "Pneumococcal Conjugate", 40, "Prevnar", 00005-1971-02, 160);
+INSERT INTO immunization VALUES (9, "Pneumococcal Polysaccharide", 20, "Pneumovax", 00006-4943-00, 110);
+INSERT INTO immunization VALUES (10, "Rotavirus", 40, "Rotarix", 58160-0854-52, 175);
+INSERT INTO immunization VALUES (11, "Td", 40, "Tenivac", 49281-0215-15, 255);
+INSERT INTO immunization VALUES (12, "Tdap", 40, "Adacel Sanofi", 49281-0400-10, 285);
+INSERT INTO immunization VALUES (13, "MMR", 20, "Merck", 00006-4681-00, 267);
+INSERT INTO immunization VALUES (14, "MMRV", 40, "Merck", 00006-4171-00, 145);
+INSERT INTO immunization VALUES (15, "Varicella", 40, "Merck", 00006-4827-00, 236);
+SELECT * FROM immunization ORDER BY cost;
+
+SELECT * FROM immunization WHERE quantity >40 ORDER BY quantity;
